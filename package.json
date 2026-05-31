@@ -1,6 +1,6 @@
 {
-  "name": "light-speedjs",
-  "version": "0.0.1",
+  "name": "light-kitjs",
+  "version": "1.0.0",
   "description": "This is a JavaScript library that makes coding easier.",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",

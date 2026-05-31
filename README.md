@@ -1,4 +1,4 @@
-# light-speedjs
+# light-kit.js
 This is a JavaScript library that makes coding easier and it made by TypeScript. This is also a frontend library. This library is makes for simple code. The JavaScript function are very simple at there.
 
 # Features

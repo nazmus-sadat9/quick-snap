@@ -1,0 +1,28 @@
+{
+  "name": "light-speedjs",
+  "version": "0.0.1",
+  "description": "This is a JavaScript library that makes coding easier.",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsup"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nazmus-sadat9/light-speedjs.git"
+  },
+  "keywords": [
+    "light-speed"
+  ],
+  "author": "Nazmus Sadat",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nazmus-sadat9/light-speedjs/issues"
+  },
+  "homepage": "https://github.com/nazmus-sadat9/light-speedjs#readme",
+  "devDependencies": {
+    "tsup": "^8.5.1",
+    "typescript": "^6.0.3"
+  }
+}

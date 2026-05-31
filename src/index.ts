@@ -1,3 +1,7 @@
-export function hello(name: string) {
-  
+import * as mathfunc from "./math";
+
+export { mathfunc };
+
+export const lightMath = {
+  randNum: mathfunc.random,
 }

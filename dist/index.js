@@ -20,12 +20,26 @@ var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: tru
 // src/index.ts
 var index_exports = {};
 __export(index_exports, {
-  hello: () => hello
+  lightMath: () => lightMath,
+  mathfunc: () => math_exports
 });
 module.exports = __toCommonJS(index_exports);
-function hello(name) {
+
+// src/math.ts
+var math_exports = {};
+__export(math_exports, {
+  random: () => random
+});
+function random(min, max) {
+  return Math.floor(Math.random() * (max - min + 1)) + min;
 }
+
+// src/index.ts
+var lightMath = {
+  randNum: random
+};
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
-  hello
+  lightMath,
+  mathfunc
 });

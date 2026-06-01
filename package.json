@@ -1,6 +1,6 @@
 {
   "name": "light-kitjs",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "This is a JavaScript library that makes coding easier.",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",

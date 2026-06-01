@@ -44,6 +44,8 @@ function random(type, min, max) {
     case "floor":
       return Math.random() * (max - min) + min;
       break;
+    default:
+      throw new TypeError(`Invalid type: '${type}'. Expected 'int' or 'floor'.`);
   }
 }
 

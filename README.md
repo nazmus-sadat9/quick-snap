@@ -22,10 +22,5 @@ console.log(num);
 
 ## Installation
 ```
-npm i light-kitjs 
-```
-
-```
-```
-```
+npm i light-kitjs
 ```

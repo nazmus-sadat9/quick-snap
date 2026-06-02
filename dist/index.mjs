@@ -51,10 +51,20 @@ function make(tagName, options = {}) {
 }
 
 // src/index.ts
+var _ = (selector) => {
+  return document.querySelector(selector);
+};
+var $ = (selector) => {
+  return document.getElementById(selector);
+};
+window._ = _;
+window.$ = $;
 var lightMath = {
   randNum: random
 };
 export {
+  $,
+  _,
   event,
   lightMath,
   make,

@@ -5,9 +5,9 @@ This is a JavaScript library that makes coding easier and it made by TypeScript.
 The unique part is type safety, easier and no compilation.
 
 1. Math functions 
-2. String functions
-3. Array functions
-4. Event function
+2. Event function
+3. Make function
+4. Selectors
 
 ## Math functions
 ```
@@ -41,6 +41,18 @@ const box = make("div", {
   text: "hello world", // inner text
   classes: ["box"] // multiple classes
 });
+
+document.body.appendChild(box); // add in body
+```
+
+## Selectors
+```
+// Selectors are built in functions 
+// query selector 
+_(".box");
+
+// id selector
+$("box");
 ```
 
 ## Installation

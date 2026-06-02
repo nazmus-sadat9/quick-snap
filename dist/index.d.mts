@@ -22,8 +22,15 @@ callback: EventCallback): void;
 
 declare function make<K extends keyof HTMLElementTagNameMap>(tagName: K, options?: MakeOptions): HTMLElementTagNameMap[K];
 
+declare global {
+    function _(selector: string): HTMLElement | null;
+    function $(selector: string): HTMLElement | null;
+}
+declare const _: (selector: string) => HTMLElement | null;
+declare const $: (selector: string) => HTMLElement | null;
+
 declare const lightMath: {
     randNum: typeof random;
 };
 
-export { type ElementAttributes, type EventCallback, type EventTargetEl, type MakeOptions, type RandomType, event, lightMath, make, math as mathfunc };
+export { $, type ElementAttributes, type EventCallback, type EventTargetEl, type MakeOptions, type RandomType, _, event, lightMath, make, math as mathfunc };

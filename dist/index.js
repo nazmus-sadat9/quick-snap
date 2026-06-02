@@ -20,6 +20,8 @@ var __toCommonJS = (mod) => __copyProps(__defProp({}, "__esModule", { value: tru
 // src/index.ts
 var index_exports = {};
 __export(index_exports, {
+  $: () => $,
+  _: () => _,
   event: () => event,
   lightMath: () => lightMath,
   make: () => make,
@@ -74,11 +76,21 @@ function make(tagName, options = {}) {
 }
 
 // src/index.ts
+var _ = (selector) => {
+  return document.querySelector(selector);
+};
+var $ = (selector) => {
+  return document.getElementById(selector);
+};
+window._ = _;
+window.$ = $;
 var lightMath = {
   randNum: random
 };
 // Annotate the CommonJS export names for ESM import in node:
 0 && (module.exports = {
+  $,
+  _,
   event,
   lightMath,
   make,

@@ -1,6 +1,6 @@
 {
   "name": "lightingjs",
-  "version": "0.3.9",
+  "version": "0.4.9",
   "description": "This is a JavaScript library that makes coding easier.",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",

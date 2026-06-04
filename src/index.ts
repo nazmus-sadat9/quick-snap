@@ -1,16 +1,17 @@
 // modules
-import * as mathfunc from "./math";
+import { randNum } from "./utilities/math";
+import { copy } from "./utilities/copy"
 import { makeTag } from "./make";
 import { makeEvent } from "./events";
 export * from "./types";
 export { makeEvent } from "./events";
 export { makeTag } from "./make";
 
-export { mathfunc };
 
 // light object
 export const light = {
-  randNum: mathfunc.random,
+  randNum,
+  copy,
 }
 
 // global functions 
@@ -19,6 +20,7 @@ declare global {
   function id(selector: string): HTMLElement | null;
   function makeTag<K extends keyof HTMLElementTagNameMap>(tagName: K, options?: any): HTMLElementTagNameMap[K];
   function makeEvent(element: any, type: string, callback: any): void;
+  const light: { randNum: (type: "int" | "float", min: number, max: number) => number };
 }
 
 // describe the global functions
@@ -38,4 +40,5 @@ if (typeof window !== "undefined"){
   (window as any).id = id;
   (window as any).makeTag = makeTag;
   (window as any).makeEvent = makeEvent;
+  (window as any).light = light;
 }

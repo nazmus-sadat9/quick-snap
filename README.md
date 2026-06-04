@@ -9,10 +9,10 @@ The unique part is type safety, easier and no compilation.
 3. makeTag function
 4. Selectors
 
-## Math functions
+## randNum utility
 ```
-// import math functions from lightingjs
-import { light } from "lightingjs";
+import { light } from "lightingjs"; // ES Module
+const { light } = require("lightingjs"); // CommonJS
 
 // the arguments are type, minimum and maximum number.
 const num = light.randNum("int", 1, 15);
@@ -46,6 +46,23 @@ query(".box");
 
 // id selector
 id("box");
+```
+
+## copy utility
+``` 
+import { light } from "lightingjs"; // ES Module
+const { light } = require("lightingjs"); // CommonJS
+
+// make a button tag 
+const btn = makeTag("button", {
+  text: "copy"
+});
+
+makeEvent(btn, "click", async () => {
+
+  const result = await light.copy("hello world"); // return true or false
+
+});
 ```
 
 ## Installation

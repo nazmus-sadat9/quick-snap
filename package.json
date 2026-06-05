@@ -1,6 +1,6 @@
 {
   "name": "lightingjs",
-  "version": "0.4.9",
+  "version": "0.6.0",
   "description": "This is a JavaScript library that makes coding easier.",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
@@ -10,6 +10,9 @@
   "files": [
     "dist"
   ],
+  "bin": {
+    "lightingjs": "./dist/cli.js"
+  },
   "scripts": {
     "build": "tsup",
     "prepublishOnly": "npm run build"
@@ -30,6 +33,7 @@
   },
   "homepage": "https://github.com/nazmus-sadat9/lightingjs#readme",
   "devDependencies": {
+    "@types/node": "^25.9.1",
     "tsup": "^8.5.1",
     "typescript": "^6.0.3"
   }

@@ -9,7 +9,7 @@ export { makeTag } from "./make";
 
 
 // light object
-export const light = {
+export const lighting = {
   randNum,
   copy,
 }
@@ -20,7 +20,7 @@ declare global {
   function id(selector: string): HTMLElement | null;
   function makeTag<K extends keyof HTMLElementTagNameMap>(tagName: K, options?: any): HTMLElementTagNameMap[K];
   function makeEvent(element: any, type: string, callback: any): void;
-  const light: { randNum: (type: "int" | "float", min: number, max: number) => number };
+  const lighting: { randNum: (type: "int" | "float", min: number, max: number) => number };
 }
 
 // describe the global functions
@@ -40,5 +40,5 @@ if (typeof window !== "undefined"){
   (window as any).id = id;
   (window as any).makeTag = makeTag;
   (window as any).makeEvent = makeEvent;
-  (window as any).light = light;
+  (window as any).lighting = lighting;
 }

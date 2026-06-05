@@ -11,11 +11,11 @@ The unique part is type safety, easier and no compilation.
 
 ## randNum utility
 ```JavaScript
-import { light } from "lightingjs"; // ES Module
-const { light } = require("lightingjs"); // CommonJS
+import { lighting } from "lightingjs"; // ES Module
+const { lighting } = require("lightingjs"); // CommonJS
 
 // the arguments are type, minimum and maximum number.
-const num = light.randNum("int", 1, 15);
+const num = lighting.randNum("int", 1, 15);
 
 console.log(num);
 ```
@@ -50,8 +50,8 @@ id("box");
 
 ## copy utility
 ```JavaScript
-import { light } from "lightingjs"; // ES Module
-const { light } = require("lightingjs"); // CommonJS
+import { lighting } from "lightingjs"; // ES Module
+const { lighting } = require("lightingjs"); // CommonJS
 
 // make a button tag 
 const btn = makeTag("button", {
@@ -60,7 +60,7 @@ const btn = makeTag("button", {
 
 makeEvent(btn, "click", async () => {
 
-  const result = await light.copy("hello world"); // return true or false
+  const result = await lighting.copy("hello world"); // return true or false
 
 });
 ```

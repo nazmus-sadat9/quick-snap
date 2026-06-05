@@ -81,11 +81,11 @@ npm i lightingjs
 
 ## Update
 ```
-npm update lightingjs
+lightingjs --update 
 ```
 
 ## Version
 ```
-npm list lightingjs
+lightingjs --version
 ```
 
